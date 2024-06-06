@@ -1,0 +1,36 @@
+@import "../../../mixins";
+
+
+.item_content{
+    background-color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    
+    &:hover {
+        h1.hover_title{
+            color: $green;
+        } 
+    }
+
+    img{
+        height: 160px;
+    }
+
+    .content_info{
+        padding: 30px;
+        p{
+            font-size: 16px;
+            margin-bottom: 10px;
+
+            span{
+                font-weight: 600;
+                color: $black;
+            }
+
+        }
+        h1{
+        transition: .1s linear;
+            font-size: 20px;
+        }
+    }
+}

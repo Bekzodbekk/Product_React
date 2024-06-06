@@ -1,0 +1,169 @@
+@import "../../mixins";
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+
+    .nav_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-size: 30px;
+            color: #fff;
+            font-weight: 900;
+            margin-left: 15px;
+        }
+    }
+
+    .nav_menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                list-style: none;
+                margin: 0 30px;
+
+                a {
+                    text-decoration: none;
+                    color: #ffffffc4;
+                    font-size: 16px;
+                }
+
+                &>a:hover {
+                    color: #fff;
+                }
+            }
+        }
+
+        .nav_btns {
+            a {
+                transition: 0.1s linear;
+                color: #fff;
+                text-decoration: none;
+                margin: 0 10px;
+                padding: 10px 20px;
+                border-radius: 7px;
+                border: 1px solid #fff;
+            }
+
+            .out:hover {
+                background-color: $green;
+                border-color: $green;
+            }
+
+            .inner {
+                background-color: $green;
+                border-color: $green;
+            }
+
+            .inner:hover {
+                background-color: $black;
+                border-color: #fff;
+            }
+
+        }
+
+    }
+
+    i.fa-bars {
+        display: none;
+        color: #fff;
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 1182px) {
+    .nav {
+        .nav_logo {
+            span {
+                font-size: 23px;
+            }
+        }
+
+        .nav_menu {
+            ul {
+                li {
+                    margin: 0 15px;
+
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .nav_btns {
+            a {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 994px) {
+    .nav {
+
+        .nav_menu {
+            
+            position: absolute;
+            padding: 20px 40px;
+            background-color: $black;
+            right: -100%;
+            top: 80px;
+            border: 1px solid #fff;
+            border-radius: 6px;
+            display: block;
+            transition: 0.3s linear;
+
+            ul {
+                display: block;
+
+                li {
+                    text-align: center;
+                    margin-top: 20px;
+
+                    a {
+                        font-size: 22px;
+                    }
+                }
+            }
+
+            .nav_btns {
+                a {
+                    text-align: center;
+                    padding: 12px 60px;
+
+                    display: block;
+                    margin-top: 20px;
+                }
+
+                margin-top: 20px;
+            }
+        }
+
+        i.fa-bars {
+            display: block;
+            cursor: pointer;
+        }
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .nav {
+        .nav_menu {
+            right: 20px;
+        }
+    }
+}

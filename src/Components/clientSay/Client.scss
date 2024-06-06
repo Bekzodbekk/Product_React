@@ -1,0 +1,43 @@
+.client_container {
+    margin-top: 40px;
+
+    .title {
+        color: #fff;
+        text-align: center;
+    }
+
+    .client_items {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &>* {
+            margin: 0 30px;
+
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1037px) {
+    .client_container {
+        .client_items {
+            & > * {
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 933px) {
+    .client_container{
+        .client_items{
+            flex-direction: column;
+
+            & > *{
+                margin: 20px 0px;
+            }
+        }
+    }
+}

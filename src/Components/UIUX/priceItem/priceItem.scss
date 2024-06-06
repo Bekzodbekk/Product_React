@@ -1,0 +1,62 @@
+@import "../../../mixins";
+.price_item{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 50px;
+    transition: .1s linear;
+
+    button{
+        color: #fff;
+    }
+    &:hover{
+        background-color: $green;
+        &>*{
+            color: #fff;
+        }
+        button{
+            background: #fff;
+            color: $green;
+        }
+    }
+
+    p.desc{
+        margin: 10px 0;
+    }
+    & > * {
+        color: $black;
+    }
+
+    .price_box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0px;
+
+        text-align: left;
+        .price{
+            margin-right: 10px;
+        }
+
+        .date{
+            p{
+                margin: auto;
+            }
+        }
+    }
+    p{
+        margin: 10px 0;
+    }
+    button{
+        margin-top: 30px;
+        height: 50px;
+        width: 150px;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        background-color: $green;
+        cursor: pointer;
+        font-size: 20px;
+    }
+}
+
+

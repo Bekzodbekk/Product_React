@@ -1,0 +1,23 @@
+@import "../../mixins";
+
+// Container styles
+.container {
+    position: relative;
+    background-color: $black;
+    padding: 0 100px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+@media only screen and (max-width: 496px) {
+    .container {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .container {
+        padding: 0 20px;
+    }
+}

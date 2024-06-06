@@ -1,0 +1,65 @@
+@import "../../mixins";
+
+.cardbox_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+    
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $green;
+        width: 900px;
+        height: 60%;
+        padding: 20px;
+        border-radius: 40px;
+
+        & > *{
+            color: #fff;
+        }
+
+        .card_info{
+            button{
+                margin-top: 30px;
+                height: 40px;
+                width: 150px;
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                color: $green;
+                background-color: #fff;
+                font-size: 15px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 910px){
+    .cardbox_container{
+        .box{
+            display: block;
+            text-align: center;
+
+            img{
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 744px){
+    .cardbox_container{
+        .box{
+            .card_info{
+                h1{
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+}
